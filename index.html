@@ -33,6 +33,14 @@ button:active{transform:scale(.97)}
 .card.dark p{color:#fff7df}
 .two-figures{font-size:70px;letter-spacing:-10px;margin-bottom:18px}
 .final{background:linear-gradient(180deg,#fff8e8,#f9e1a0)}
+.memory-screen{padding:28px 20px 88px}
+.memory-screen .brand{top:calc(16px + env(safe-area-inset-top))}
+.memory-screen .small{margin-bottom:8px}
+.memory-screen h2{font-size:clamp(25px,7vw,34px);margin:0 0 12px}
+.memory-card{padding:18px 18px;border-radius:24px;max-width:460px}
+.memory-card p{font-size:clamp(15.5px,4.2vw,19px);line-height:1.34}
+.memory-card p+p{margin-top:10px!important}
+
 </style>
 </head>
 <body>
@@ -55,16 +63,15 @@ button:active{transform:scale(.97)}
   <div class="nav"><button onclick="next()">Siguiente →</button></div>
 </section>
 
-<section class="screen">
+<section class="screen memory-screen">
   <div class="brand">Para ti, Nataly 💛</div>
   <div class="small">Cuatro años después...</div>
-  <div class="flower">🌻</div>
-  <h2 style="margin-top:12px">Esta vez se siente diferente.</h2>
-  <div class="card">
-    <p>Hace cuatro años nos conocemos, y ahora que estamos hablando de nuevo siento que algo cambió.</p>
-    <p style="margin-top:14px">Esta vez siento cosas diferentes a antes, quizá porque los dos hemos madurado y hoy vemos las cosas de otra manera.</p>
-    <p style="margin-top:14px">Me gustan tus ocurrencias, cómo te comportas, lo tierna que puedes ser y hasta lo renegona que eres... porque, aunque reniegues, eso también me gusta de ti. 💛</p>
-    <p style="margin-top:14px">También admiro que seas una mujer valiente, y eso es parte de lo especial que eres para mí.</p>
+  <h2>Esta vez se siente diferente.</h2>
+  <div class="card memory-card">
+    <p>Hace cuatro años que nos conocemos, y ahora que estamos hablando de nuevo siento que algo cambió.</p>
+    <p>Esta vez siento cosas diferentes a antes, porque los dos hemos madurado y hoy vemos las cosas de otra manera.</p>
+    <p>Me gustan tus ocurrencias, cómo te comportas y lo tierna que eres. Y sí, también me gusta lo renegona que eres. 💛</p>
+    <p>Te considero una mujer muy valiente, y todo eso hace que seas alguien muy especial para mí.</p>
   </div>
   <div class="nav"><button onclick="next()">Siguiente →</button></div>
 </section>
