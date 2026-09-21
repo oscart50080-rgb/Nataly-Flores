@@ -42,6 +42,24 @@ button:active{transform:scale(.97)}
 .memory-card p+p{margin-top:8px!important}
 
 
+
+.cover-screen{justify-content:flex-start;padding-top:calc(62px + env(safe-area-inset-top));}
+.cover-top{font-size:24px;margin:8px 0 8px;letter-spacing:2px}
+.cover-screen .small{margin-bottom:10px;font-size:10px;letter-spacing:2.2px}
+.cover-card{width:min(100%,430px);padding:18px 18px 20px;border-radius:34px;background:rgba(255,255,255,.78);backdrop-filter:blur(12px);border:1px solid rgba(221,181,83,.45);box-shadow:0 22px 55px rgba(100,72,18,.14);position:relative;overflow:hidden}
+.cover-card:before,.cover-card:after{content:'🌻';position:absolute;font-size:38px;opacity:.22}
+.cover-card:before{left:-7px;top:18px;transform:rotate(-18deg)}
+.cover-card:after{right:-7px;bottom:12px;transform:rotate(18deg)}
+.cover-mini{font:700 10px Arial,sans-serif;letter-spacing:2.4px;color:#a07a2d;margin-bottom:2px}
+.cover-flower{font-size:52px;line-height:1;margin:3px 0 -2px;filter:drop-shadow(0 7px 7px rgba(122,87,13,.12))}
+.cover-screen h1{font-size:clamp(60px,18vw,82px);margin:0 0 1px;line-height:.98;color:#33271e;letter-spacing:-3px}
+.cover-line{display:flex;align-items:center;justify-content:center;gap:9px;color:#9a7224;font:italic 700 22px Georgia,serif;margin:3px 0 12px}
+.cover-line span{width:34px;height:1px;background:#d9b55c;display:block}
+.cover-main{font-size:clamp(15px,4.2vw,19px);line-height:1.35;max-width:360px}
+.cover-note{margin:14px auto 0;padding:10px 12px;border-radius:18px;background:rgba(246,198,63,.16);color:#6f5520;font:600 12px Arial,sans-serif;line-height:1.35;max-width:330px}
+.cover-bottom{display:flex;gap:22px;margin-top:13px;font-size:18px;opacity:.82}
+@media (max-height:700px){.cover-screen{padding-top:calc(52px + env(safe-area-inset-top))}.cover-card{padding:14px 16px 16px}.cover-top{font-size:20px;margin:4px 0 5px}.cover-flower{font-size:42px}.cover-screen h1{font-size:58px}.cover-line{font-size:19px;margin-bottom:8px}.cover-main{font-size:14px}.cover-note{margin-top:9px;padding:8px 10px}.cover-bottom{margin-top:8px;font-size:16px}}
+
 @media (max-height:700px){
   .screen{padding-top:calc(58px + env(safe-area-inset-top));padding-bottom:calc(92px + env(safe-area-inset-bottom))}
   .memory-screen{padding-top:calc(55px + env(safe-area-inset-top));padding-bottom:calc(92px + env(safe-area-inset-bottom))}
@@ -56,12 +74,22 @@ button:active{transform:scale(.97)}
 <body>
 <div class="progress" id="progress">1 / 9</div>
 
-<section class="screen active">
+<section class="screen active cover-screen">
   <div class="bg"><div class="sun"></div><i class="petal p1"></i><i class="petal p2"></i><i class="petal p3"></i><i class="petal p4"></i></div>
   <div class="brand">Para ti 💛</div>
-  <div class="small">Una pequeña sorpresa</div>
-  <h1>Nataly</h1>
-  <p>Hoy quería hacer algo diferente para ti.</p>
+  <div class="cover-top">🌻 &nbsp; 💛 &nbsp; 🌻</div>
+  <div class="small">Una pequeña sorpresa hecha para ti</div>
+  <div class="cover-card">
+    <div class="cover-mini">PARA UNA PERSONA ESPECIAL</div>
+    <div class="cover-flower">🌻</div>
+    <h1>Nataly</h1>
+    <div class="cover-line"><span></span> Para ti <span></span></div>
+    <p class="cover-main">Porque hay personas que merecen un detalle bonito, aunque sea a la distancia.</p>
+    <div class="cover-note">✨ Un pequeño rincón hecho con cariño, solo para ti. ✨</div>
+  </div>
+  <div class="cover-bottom">
+    <span>💛</span><span>🌻</span><span>💛</span>
+  </div>
   <div class="nav"><button onclick="next()">Siguiente →</button></div>
 </section>
 
