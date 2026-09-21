@@ -28,20 +28,30 @@ button:active{transform:scale(.97)}
 .flower{font-size:100px;line-height:1;filter:drop-shadow(0 12px 12px rgba(122,87,13,.16));animation:bloom 2.2s ease-in-out infinite alternate}
 @keyframes bloom{to{transform:scale(1.06) rotate(2deg)}}
 .card{background:rgba(255,255,255,.72);backdrop-filter:blur(10px);border:1px solid rgba(221,181,83,.35);padding:27px 22px;border-radius:28px;max-width:450px;box-shadow:0 20px 50px rgba(100,72,18,.10)}
-/* Original Loki-inspired illustration: green/gold trickster, no external image required */
-.loki-wrap{width:min(86vw,360px);height:310px;position:relative;margin:0 auto 8px}
-.loki{position:absolute;left:50%;top:18px;transform:translateX(-50%);width:145px;height:220px}
-.head{width:78px;height:88px;border-radius:48% 48% 44% 44%;background:#d9a878;position:absolute;left:34px;top:20px;z-index:3;box-shadow:inset -7px 0 0 rgba(90,45,30,.10)}
-.hair{position:absolute;left:18px;top:0;width:110px;height:65px;background:#1e1715;border-radius:55% 55% 40% 40%;z-index:4}
-.hair:after{content:"";position:absolute;left:-12px;top:26px;width:45px;height:90px;background:#1e1715;border-radius:70% 30% 60% 30%;transform:rotate(14deg)}
-.eye{position:absolute;width:8px;height:6px;background:#332018;border-radius:50%;top:57px;z-index:5}.e1{left:53px}.e2{left:82px}
-.smile{position:absolute;width:25px;height:10px;border-bottom:3px solid #6c342a;border-radius:50%;left:61px;top:79px;z-index:5}
-.horns{position:absolute;left:13px;top:-15px;width:120px;height:58px;z-index:2}
-.horn{position:absolute;width:42px;height:62px;border:8px solid #c89a38;border-bottom:0;border-radius:70% 40% 0 0}.hl{left:0;transform:rotate(-26deg)}.hr{right:0;transform:scaleX(-1) rotate(-26deg)}
-.body{position:absolute;left:18px;top:92px;width:110px;height:130px;background:linear-gradient(90deg,#102f24,#27583f);border-radius:24px 24px 10px 10px;z-index:2;border:3px solid #c89a38}
-.cape{position:absolute;left:-8px;top:100px;width:130px;height:135px;background:#4b1622;clip-path:polygon(12% 0,88% 0,100% 100%,0 100%);z-index:1;border-radius:20px}
-.arm{position:absolute;top:120px;width:75px;height:22px;background:#d9a878;border-radius:20px;z-index:4}.al{left:-35px;transform:rotate(17deg)}.ar{right:-35px;transform:rotate(-17deg)}
-.flower-held{position:absolute;right:-65px;top:65px;font-size:65px;z-index:6;transform:rotate(-10deg)}
+/* Original green/gold horned trickster illustration */
+.loki-wrap{width:min(92vw,390px);height:350px;position:relative;margin:0 auto 4px}
+.loki{position:absolute;left:50%;top:18px;transform:translateX(-50%);width:190px;height:290px}
+.head{width:92px;height:105px;border-radius:48% 48% 45% 45%;background:#d6a477;position:absolute;left:49px;top:40px;z-index:4;box-shadow:inset -8px 0 0 rgba(90,45,30,.10)}
+.hair{position:absolute;left:31px;top:12px;width:130px;height:82px;background:#171515;border-radius:60% 60% 42% 42%;z-index:5}
+.hair:before{content:"";position:absolute;left:-10px;top:42px;width:48px;height:116px;background:#171515;border-radius:80% 30% 65% 30%;transform:rotate(10deg)}
+.hair:after{content:"";position:absolute;right:-10px;top:42px;width:48px;height:116px;background:#171515;border-radius:30% 80% 30% 65%;transform:rotate(-10deg)}
+.horns{position:absolute;left:3px;top:-2px;width:184px;height:92px;z-index:3}
+.horn{position:absolute;width:58px;height:88px;border:11px solid #d2a33e;border-bottom:0;border-radius:75% 45% 0 0}
+.hl{left:2px;transform:rotate(-30deg)}.hr{right:2px;transform:scaleX(-1) rotate(-30deg)}
+.eye{position:absolute;width:11px;height:7px;background:#2a1712;border-radius:50%;top:91px;z-index:7}
+.e1{left:68px}.e2{left:106px}
+.brow{position:absolute;width:25px;height:6px;border-top:4px solid #39231b;top:83px;z-index:7}
+.b1{left:62px;transform:rotate(7deg)}.b2{left:100px;transform:rotate(-7deg)}
+.nose{position:absolute;left:85px;top:96px;width:10px;height:20px;border-right:3px solid rgba(80,45,30,.35);border-radius:50%;z-index:7}
+.smile{position:absolute;width:31px;height:13px;border-bottom:3px solid #6c342a;border-radius:50%;left:80px;top:122px;z-index:7}
+.body{position:absolute;left:29px;top:140px;width:132px;height:145px;background:linear-gradient(100deg,#102f24,#2f6849);border-radius:28px 28px 13px 13px;z-index:2;border:4px solid #c99e3d}
+.chest{position:absolute;left:62px;top:153px;width:66px;height:95px;border-left:3px solid #d8ad49;border-right:3px solid #d8ad49;transform:skew(-8deg);z-index:5}
+.cape{position:absolute;left:-1px;top:145px;width:190px;height:145px;background:#4b1622;clip-path:polygon(13% 0,87% 0,100% 100%,0 100%);z-index:1;border-radius:25px}
+.arm{position:absolute;top:174px;width:92px;height:25px;background:#d6a477;border-radius:22px;z-index:6}
+.al{left:-55px;transform:rotate(20deg)}.ar{right:-55px;transform:rotate(-20deg)}
+.hand{position:absolute;right:-74px;top:157px;width:35px;height:35px;background:#d6a477;border-radius:50%;z-index:7}
+.flower-held{position:absolute;right:-112px;top:93px;font-size:92px;z-index:8;transform:rotate(-7deg);filter:drop-shadow(0 8px 6px rgba(90,55,10,.18))}
+.loki-name{position:absolute;bottom:0;left:0;right:0;font:700 15px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#8c6b27}
 .card.dark{background:linear-gradient(145deg,#132d23,#234d38);color:#fff7df;border-color:#d6a63a}
 .card.dark .small{color:#e9bd4b}
 .card.dark p{color:#fff7df}
@@ -65,7 +75,7 @@ button:active{transform:scale(.97)}
   <div class="brand">Para ti 💛</div>
   <div class="small">Antes de continuar…</div>
   <h2>Hay algo que quiero decirte.</h2>
-  <p>Aunque todavía no nos conocemos en persona, por lo que he podido conocer de ti y por esas fotos que he visto, para mí eres una chica muy bonita y especial.</p>
+  <p>Quiero que sepas algo desde el principio: para mí eres una chica muy bonita y especial. 💛</p>
   <div class="nav"><button onclick="next()">Siguiente →</button></div>
 </section>
 
@@ -77,12 +87,16 @@ button:active{transform:scale(.97)}
     <div class="loki">
       <div class="horns"><div class="horn hl"></div><div class="horn hr"></div></div>
       <div class="hair"></div><div class="head"></div>
-      <div class="eye e1"></div><div class="eye e2"></div><div class="smile"></div>
-      <div class="body"></div><div class="arm al"></div><div class="arm ar"></div>
+      <div class="brow b1"></div><div class="brow b2"></div>
+      <div class="eye e1"></div><div class="eye e2"></div>
+      <div class="nose"></div><div class="smile"></div>
+      <div class="body"></div><div class="chest"></div>
+      <div class="arm al"></div><div class="arm ar"></div><div class="hand"></div>
       <div class="flower-held">🌻</div>
     </div>
+    <div class="loki-name">LOKI · verde y dorado 💚</div>
   </div>
-  <p>Hasta Loki quiso ayudarte a recibir tus flores amarillas. 🌻💚</p>
+  <p>Hasta Loki quiso entregarte tus flores amarillas. 🌻💚</p>
   <div class="nav"><button onclick="next()">Siguiente →</button></div>
 </section>
 
